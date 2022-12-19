@@ -1,0 +1,57 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+}
+.sidebar a{
+    text-decoration: none;
+}
+
+.menu-item{
+    background-color: transparent;
+    padding: .2rem;
+    padding-left: 1rem;
+    border-radius: 100px;
+    height: 48px;
+    overflow: hidden;
+}
+
+.menu-item:hover{
+    background-color: #28292C;
+}
+
+.sidebar:hover{
+    width: 225px;
+    transition: 0.3s;
+}
+
+.sidebar-open-full{
+    width: 225px;
+    transition: 0.3s;
+}
+
+.sidebar-open-full .active-menu{
+    background-color: #41331C;
+    border-radius: 0% 50px 50px 0%;
+} 
+
+.sidebar:hover .menu-item{
+    border-radius: 0% 50px 50px 0%;
+}
+
+.active-menu img{
+    background-color: #41331C;
+    border-radius: 50%;
+}
+
+.active-menu:hover{
+    background-color: #41331C;
+}
+
+.menu-text{
+    color: white;
+    padding-left: 1rem;
+    font-size:medium;
+}

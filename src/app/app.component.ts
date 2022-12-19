@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'keep-clone';
+  openSideMenu = true;
+
+  operSideBar(flag: boolean){
+      this.openSideMenu = this.openSideMenu ? this.openSideMenu=false: this.openSideMenu=true;
+  }
 }

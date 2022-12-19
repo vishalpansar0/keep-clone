@@ -1,0 +1,71 @@
+.new-note-input{
+
+}
+
+.wrapper{
+    border-radius: 10px;
+    border: 1px solid #525355; 
+    color: white;
+    width: 600px;
+}
+
+.input-wrapper{
+    max-height: 48px;
+    height: 48px;
+    padding: 10px 20px;
+    font-weight: 100;
+}
+
+.wrapper:hover{
+    cursor:text;
+}
+
+.note-editor-div{
+    margin-top: -24px;
+}
+
+.note-editor-div input{
+    width: 100%;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    background-color: transparent;
+    caret-color: white;
+}
+
+.title-input{
+    padding: 5px 20px;
+}
+
+.note-input{
+    font-size: 15px;
+    padding: 5px 20px;
+    border:none;
+    background-color: transparent;
+    color: white;
+    width: 600px;
+    resize: none;
+    border-radius: 10px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    height: 300px;
+    display: block;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+.pin{
+    padding: 5px;
+    position:relative;
+    left: 550px;
+    top:10px;
+    border-radius:50%;
+    cursor: pointer;
+    width: 20px;
+}
+
+.pin:hover{
+    background-color: #525355;
+}

@@ -1,15 +1,8 @@
 <div style="padding: 25px;">
-    <div class="input-wrapper wrapper" (click)="openEditor()" *ngIf="editorFlag; else editorDiv">
+    <div class="input-wrapper" (click)="openEditor()" *ngIf="editorFlag; else editorDiv">
         <strong>Take a note...</strong>
     </div>
     <ng-template #editorDiv>
-        <span class="pin">
-            <img src="../../assets/images/push_pin.svg" alt="" class="img-responsive" width="20px">
-        </span>
-        <div class="note-editor-div wrapper">
-            <input class="title-input" type="text" placeholder="Title">
-            <textarea class="note-input" (input)="adjustHeight($event)" placeholder="Take a note..."></textarea>
-        </div>
+        <app-note-editor (editorFlagChange)="openEditor()"></app-note-editor>
     </ng-template>
-
 </div>

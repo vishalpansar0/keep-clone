@@ -1,0 +1,28 @@
+.note-editor-div{
+    position: absolute;
+    display: hidden;
+}
+
+.hello{
+    position: relative;
+}
+
+.editor-wrapper{
+    display: none;
+}
+
+.editor-wrapper-show{
+    display: block;
+    position: fixed;
+    top: 16%;
+    animation: fadeIn .3s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.hola{
+ background-color: aqua;
+}

@@ -75,9 +75,21 @@ input:focus, textarea:focus{
 }
 
 .close-editor-btn{
-    margin: 20px 25px 0px 0px;
+    margin: 20px 20px 10px 0px;
     cursor: pointer;
-    color:skyblue
+    color:white;
+}
+
+.close-editor-btn span{
+    border-radius: 3px;
+    padding: 2px 10px;
+}
+
+.close-editor-btn span:hover{
+    background-color: #525355;
+    border-radius: 3px;
+    padding: 2px 10px;
+    transition: .3s;
 }
 
 .color-palate-div{

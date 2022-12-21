@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Note } from '../shared/note.model';
 
 @Component({
   selector: 'app-new-note',
@@ -7,14 +8,21 @@ import { Component } from '@angular/core';
 })
 export class NewNoteComponent {
   editorFlag:boolean = true;
+  editorBackgroundColor: string = 'transparent';
+  colorPeleteCodes = ['#EC7063','#F7DC6F','#5DADE2','#48C9B0','#BB8FCE','#B2BABB']; 
+
+  @Input() editNoteInput: Note = new Note(0,'','','');
 
   openEditor(){
     this.editorFlag = !this.editorFlag
   }
 
-  adjustHeight(el:Event){
-    console.log(el);
-    // el.style.height = (el.scrollHeight > el.clientHeight) ? (el.scrollHeight)+"px" : "60px";
-    // console.log('hello')
-}
+  setColor(color: string){
+    if (this.editorBackgroundColor === color) {
+      this.editorBackgroundColor = 'transparent';
+    } else {
+      this.editorBackgroundColor = color;
+    }
+    
+  }
 }

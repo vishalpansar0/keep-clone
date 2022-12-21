@@ -1,0 +1,26 @@
+<div class="wrapper" [ngStyle]="{'background-color':editNoteValues.color}">
+    <span class="pin">
+        <img src="../../assets/images/push_pin.svg" alt="" class="img-responsive" width="20px">
+    </span>
+    <div class="note-editor-div">
+        <input class="title-input" type="text" placeholder="Title" [(ngModel)]="editNoteValues.title">
+        <textarea class="note-input" placeholder="Take a note..." [(ngModel)]="editNoteValues.text"></textarea>
+    </div>
+    <div class="bottom-menu-div">
+        <div class="d-flex" style="width:100%">
+            <div class="d-flex" style="width: 40%;padding: 10px;">
+                <div class="d-flex color-palate-div">
+                    <img src="../../assets/images/palette_white_24dp.svg" alt="">
+                    <!-- <div class="color-menu" *ngFor="let color of colorPeleteCodes" [ngStyle]="{'background-color':color,'border':editorBackgroundColor === color ? '1px solid black' : ''}" (click)="setColor(color)"> -->
+                    <div class="color-menu" *ngFor="let color of colorPeleteCodes" [ngStyle]="{'background-color':color}" (click)="setColor(color)">
+                    </div>
+                </div>
+            </div>
+            <div style="width: 60%;">
+                <div class="d-flex justify-content-end close-editor-btn" (click)="closeEditor()">
+                    <span>close</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

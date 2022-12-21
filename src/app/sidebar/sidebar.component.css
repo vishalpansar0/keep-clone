@@ -1,7 +1,7 @@
 .sidebar{
     display: flex;
     flex-direction: column;
-    width: 70px;
+    width: 57px;
     overflow-x: hidden;
     flex-wrap: nowrap;
 }
@@ -24,7 +24,7 @@
 
 .sidebar:hover{
     width: 225px;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .sidebar-open-full{

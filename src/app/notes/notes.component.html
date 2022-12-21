@@ -1,1 +1,14 @@
-<p>notes works!</p>
+<div class="common-padding main">
+    <div appNoteHighlighter class="note-wrapper" [ngStyle]="{'background-color':note.color}">
+        <div class="wordd" (click)="clickedOnText()">
+            <p>{{ note.title }}</p>
+            <p>{{ note.text }}</p>
+        </div>
+        <div class="bottom-btns" style="height: 20px;width:100%">
+            <img (click)="event('contentCopy')" src="../../assets/images/content_copy.svg" class="img-responsive" height="23px" alt="">
+            <img (click)="event('makeCopy')" src="../../assets/images/make_copy.svg" class="img-responsive" height="25px" alt="">
+            <img (click)="event('delete')" src="../../assets/images/trash_icon.svg" class="img-responsive" height="27px" alt="">
+        </div>
+    </div>
+</div>
+

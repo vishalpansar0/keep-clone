@@ -1,0 +1,167 @@
+.note-wrapper{
+    border: 1px solid #525355; 
+    border-radius: 10px;
+    min-height: 100px;
+    max-height: 500px;
+    min-width: 200px;
+    max-width: 250px;
+    cursor:text;
+    padding: 10px;
+    overflow:scroll;
+    color: white;
+}
+
+.wordd{
+    word-wrap: break-word;
+}
+
+.wordd p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.note-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+.bottom-btns{
+    display: none;
+    padding-bottom: 12px;
+}
+
+.bottom-btns img{
+    border-radius: 50%;
+    /* background-color: #525355; */
+    padding: 2px;
+    cursor: pointer;
+}
+
+
+.note-wrapper:hover .bottom-btns{
+    animation: fadeIn .3s;
+    display: block;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.main{
+    width:100%;
+    padding-bottom: 20px;
+}
+
+.setBorder{
+    border: 1px solid white;
+}
+
+/* 
+.wrapper{
+    border-radius: 10px;
+    border: 1px solid #525355; 
+    color: white;
+    width: 600px;
+}
+
+.input-wrapper{
+    max-height: 48px;
+    height: 48px;
+    padding: 10px 20px;
+    font-weight: 100;
+    border-radius: 10px;
+    border: 1px solid #525355; 
+    color: white;
+    width: 600px;
+}
+
+.wrapper:hover{
+    cursor:text;
+}
+
+.note-editor-div{
+    margin-top: -24px;
+}
+
+.note-editor-div input{
+    width: 100%;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    background-color: transparent;
+    caret-color: white;
+}
+
+.title-input{
+    padding: 10px 20px;
+}
+
+.note-input{
+    font-size: 15px;
+    padding: 5px 20px;
+    border:none;
+    background-color: transparent;
+    color: white;
+    width: 600px;
+    resize: none;
+    border-radius: 10px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    height: 300px;
+    display: block;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+.pin{
+    padding: 5px;
+    position:relative;
+    left: 550px;
+    top:10px;
+    border-radius:50%;
+    cursor: pointer;
+    width: 20px;
+}
+
+.pin:hover{
+    background-color: #525355;
+}
+
+.bottom-menu-div{
+    cursor:default;
+}
+
+.close-editor-btn{
+    margin: 20px 25px 0px 0px;
+    cursor: pointer;
+    color:skyblue
+}
+
+.color-palate-div{
+    cursor: pointer;
+    width: 37px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.color-palate-div:hover, .color-palate-div:focus{
+    border: 1px solid #525355;
+    width:210px;
+    transition: .4s;
+}
+
+.color-menu{
+    cursor: pointer;
+    margin-left: 5px;
+    height: 25px;
+    width: 25px;
+    border-radius: 2px;
+}
+
+.color-menu:hover, .color-menu:focus{
+    height: 27px;
+    width: 27px;
+} */

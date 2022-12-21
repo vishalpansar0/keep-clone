@@ -7,6 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NotesComponent } from './notes/notes.component';
 import { NewNoteComponent } from './new-note/new-note.component';
+import { NoteEditorComponent } from './note-editor/note-editor.component';
+import { FormsModule } from '@angular/forms';
+import { NoteHighlighterDirective } from './directives/note-highlighter.directive';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { NewNoteComponent } from './new-note/new-note.component';
     HeaderComponent,
     SidebarComponent,
     NotesComponent,
-    NewNoteComponent
+    NewNoteComponent,
+    NoteEditorComponent,
+    NoteHighlighterDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

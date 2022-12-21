@@ -3,9 +3,17 @@
     <div>
         <app-sidebar [openSideBarFlag]="openSideMenu"></app-sidebar>
     </div>
-    <div style="width:100%">
+    <div style="width:100%" class="hello">
         <div class="d-flex justify-content-center">
-            <app-new-note></app-new-note>
+            <app-new-note [editNoteInput]="selectedNote"></app-new-note>
+        </div>
+        <div class="note-editor-div d-flex justify-content-center align-items-center" style="width:100%">
+            <div [ngClass]="openEditorFlag ? 'editor-wrapper' : 'editor-wrapper-show'">
+                <app-note-editor [editNoteValues]="selectedNote"  (editorFlagChange)="openEditor()"></app-note-editor>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center flex-wrap" style="width:100%;">
+            <app-notes *ngFor="let note of notes" [note]="note" (onClickText)="editNote(note)"></app-notes>
         </div>
     </div>
 </div>
